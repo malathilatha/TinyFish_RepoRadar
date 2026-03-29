@@ -95,29 +95,7 @@ Status: Full implementation in codebase — held out of live demo due to Twitter
 
 ## 🏗 Architecture
 
-```
-┌─────────────────────────────────────────────────────────┐
-│                    React Frontend                        │
-│    ⚡ Analyze  │  🏆 Benchmark  │  👁 Watchlist  │  🚨 Signals   │
-└──────────────────────┬──────────────────────────────────┘
-                       │ SSE Streaming
-┌──────────────────────▼──────────────────────────────────┐
-│                  FastAPI Backend                         │
-│   main.py → tinyfish.py → competitor.py → watchlist.py  │
-└──────────────────────┬──────────────────────────────────┘
-                       │ Async agent calls
-┌──────────────────────▼──────────────────────────────────┐
-│            TinyFish Web Agent API                        │
-│    agent.tinyfish.ai/v1/automation/run-sse               │
-│                                                          │
-│    Agent 1              Agent 2              Agent 3     │
-│    GitHub Issues        Competitor Repo      Watchlist   │
-│    Pain Points          Strengths & Gaps     Monitor     │
-└──────────────────────────────────────────────────────────┘
-         │                    │
-    GitHub Issues        GitHub REST API
-    (live scrape)        (stars, forks, lang)
-```
+![Architecture](./Architecture.png)
 
 ## 📋 Feature Guide
 
