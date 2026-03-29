@@ -4,7 +4,7 @@
 > **"Instead of developers watching their repos, RepoRadar watches for them."**
 > 100% powered by TinyFish Web Agent API · Zero external LLM · One API key · Completely free to run.
 
-Built for the **TinyFish $2M Pre-Accelerator Hackathon**
+Built for the **TinyFish Pre-Accelerator Hackathon**
 
 ---
 
