@@ -129,7 +129,7 @@ cd backend
 python -m venv venv
 venv\Scripts\activate
 pip install -r requirements.txt
-$env:TINYFISH_API_KEY="your_key"
+$env:TINYFISH_API_KEY="your_tinyfish_apikey"
 $env:TWITTER_USERNAME="username"    
 $env:TWITTER_PASSWORD="password" 
 uvicorn main:app --reload --port 8000
